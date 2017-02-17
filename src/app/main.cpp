@@ -151,6 +151,8 @@ static bool initJobServer(const Application &app, ProcessEnvironment *environmen
 int main(int argc, char* argv[])
 {
     int result = 0;
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     try {
         SetConsoleCtrlHandler(&ConsoleCtrlHandlerRoutine, TRUE);
         Application app(argc, argv);
